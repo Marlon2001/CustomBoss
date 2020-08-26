@@ -1,0 +1,28 @@
+# Se as mensagens devem ter prefix
+PrefixMessage: true
+
+Settings:
+  InventoryName: "&6&lCustom Boss"
+  Slots: 27 # Slot do inventário deve ser um multiplo de 9, 27 para colocar os paineis na primeira e ulima linha
+  KillAll: false # Matar todos os mobs se o servidor reiniciar
+
+Mensagens:
+  prefix: "&3[&6DreamBoss&3] "
+
+  cmd_boss: "&7/boss &8- &fpara pegar um boss/espadas"
+  cmd_killall: "&7/boss killall &8- &fpara matar todos os bosses"
+  cmd_give: "&7/boss give [player] [boss] [quantidade]"
+  cmd_help: "&7/boss help &8- &fmostrar todos os comandos"
+  cmd_reload: "&7/boss reload &8- &frecarregar as configurações do plugin"
+  cmd_broadcast: "&7/boss bc (mensagem) &8- &fmensagem de broadcast"
+
+  notspawn_chunk: "&fNão é possível spawnar um boss nesta chunk."
+  killall: "&fVocê matou &3{bosses} &fbosses."
+  jogador_inexistente: "&fJogador &3{player} &fnão existe ou não está online."
+  item_inexistente: "&Item &3{item} &fnão encontrado."
+  boss_distancia_morreu: "&6Um Boss dessa região foi morto por: &ctempo esgotado!"
+  boss_distancia_nasceu: "&6Um Boss acaba de nascer nessa região!"
+  reload: "&fConfigurações do plugin recarregadas."
+
+  sem_permissao: "&6Sem permissão."
+  comando_desconhecido: "&6Comando desconhecido."

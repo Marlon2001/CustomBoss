@@ -1,0 +1,279 @@
+Settings:
+  InventoryName: "&6&lBoss"
+  # Nome e lore do livro na gui principal
+  BookName: "&eBoss"
+  BookLore:
+    - "Clique para editar os boss"
+  Slots: 9 # Slot do inventário deve ser um multiplo de 9
+  MobBarStyle: 2 # Estilo de life para os bosses, do 1 ao 5
+
+Bosses:
+  RandomBoss:
+    GUI:
+      ItemID: "383:58" # Item para spawnar o boss
+      Slot: 0 # Slot do item na GUI
+      Name: "&6&lRandom Boss" # Nome do item
+      Lore: # Lore do item
+        - "&aBoss Aleatório"
+    SpawnEgg:
+      ItemID: "383:58"
+      Name: "&5&lRandom Boss Egg"
+      Lore:
+        - "&7Clique com o botão direito para"
+        - "&7Spawnar o boss"
+    # Não é necessaria uma sessão "Boss" para esta config
+
+  Zombie:
+    GUI:
+      ItemID: "383:49"
+      Slot: 1
+      Name: "&6&lZombie Boss"
+      Lore: #The lore on the item
+        - "&aO Boss Zombie"
+        - "&6* &75 minutos p/ matar"
+    SpawnEgg:
+      ItemID: "383:49"
+      Name: "&5&lZombie Boss Egg"
+      Lore:
+        - "&7Clique com o botão direito para"
+        - "&7Spawnar o boss"
+        - "&75 minutos p/ matar"
+    Boss:
+      Name: "&4&lZombie Boss" # Nome do boss
+      Health: 80 # Vida do boss
+      BossType: "Zombie" # Tipo de Boss
+      Tempo: 480 # Tempo para matar o boss em segundos, -1 para ser infinito
+      ArmorType: "Diamond" # Armadura
+      ArmorEnchantments: # Encantamento da armadura
+        - "PROTECTION_ENVIRONMENTAL:5"
+        - "PROTECTION_FIRE:5"
+        - "PROTECTION_FALL:5"
+        - "PROTECTION_EXPLOSIONS:5"
+      WeaponType: "276" # Item na mão do boss
+      WeaponEnchantments: # Encantamentos do item que estiver na mão do boss
+        - "DAMAGE_ALL:5"
+        - "FIRE_ASPECT:2"
+      NaturalDrops: false # Drops normais do boss, se true pode ocasionar dupe
+      DropXP: 300 # Quantidade de xp que irá dropar ao matar o boss, inteiro
+      CustomDrops: # Custom drops
+        - ""
+      MessageToKiller: # Variáveis disponíveís {player}, {boss}
+        - "&c&lVocê matou o Boss {boss}."
+      Commands:
+        - "me &a{player} matou um boss!!"
+      Servos:
+        Name: "&fServo de &3{boss}"
+        Health: 20
+        Delay: 3 # em segundos
+        ServosPorDelay: 5
+        MaxServos: 5
+        ArmorType: "Leather"
+        ArmorEnchantments:
+          - "PROTECTION_ENVIRONMENTAL:1"
+        WeaponType: "268"
+        WeaponEnchantments:
+          - "DAMAGE_ALL:1"
+        Types:
+            - "Zombie"
+            - "Skeleton"
+  IronGolem:
+    GUI:
+      ItemID: "383:53"
+      Slot: 2
+      Name: "&6&lIronGolem Boss"
+      Lore: #The lore on the item
+        - "&aO Boss IronGolem"
+        - "&6* &75 minutos p/ matar"
+    SpawnEgg:
+      ItemID: "383:53"
+      Name: "&5&lIronGolem Boss Egg"
+      Lore:
+        - "&7Clique com o botão direito para"
+        - "&7Spawnar o boss"
+        - "&75 minutos p/ matar"
+    Boss:
+      Name: "&4&lIronGolem Boss" # Nome do boss
+      Health: 80 # Vida do boss
+      BossType: "Iron Golem" # Tipo de Boss
+      Tempo: 480 # Tempo para matar o boss em segundos, -1 para ser infinito
+      ArmorType: "Diamond" # Armadura
+      ArmorEnchantments: # Encantamento da armadura
+        - "PROTECTION_ENVIRONMENTAL:5"
+        - "PROTECTION_FIRE:5"
+        - "PROTECTION_FALL:5"
+        - "PROTECTION_EXPLOSIONS:5"
+      WeaponType: "276" # Item na mão do boss
+      WeaponEnchantments: # Encantamentos do item que estiver na mão do boss
+        - "DAMAGE_ALL:5"
+        - "FIRE_ASPECT:2"
+      NaturalDrops: false # Drops normais do boss, se true pode ocasionar dupe
+      DropXP: 300 # Quantidade de xp que irá dropar ao matar o boss, inteiro
+      CustomDrops: # Custom drops
+        - ""
+      MessageToKiller: # Variáveis disponíveís {player}, {boss}
+        - "&c&lVocê matou o Boss {boss}."
+      Commands:
+        - "me &a{player} matou um boss!!"
+      Servos:
+        Name: "&fServo de &3{boss}"
+        Health: 20
+        Delay: 3 # em segundos
+        ServosPorDelay: 5
+        MaxServos: 10
+        ArmorType: "Diamond"
+        ArmorEnchantments:
+          - "PROTECTION_ENVIRONMENTAL:1"
+        WeaponType: "268"
+        WeaponEnchantments:
+          - "DAMAGE_ALL:1"
+        Types:
+          - "Spider"
+          - "Skeleton"
+          - "Enderman"
+
+  WitherBoss:
+    GUI:
+      ItemID: "383:52"
+      Slot: 3
+      Name: "&6&lWither Boss"
+      Lore: #The lore on the item
+        - "&aO Boss Wither"
+        - "&6* &75 minutos p/ matar"
+    SpawnEgg:
+      ItemID: "383:52"
+      Name: "&5&lWither Boss Egg"
+      Lore:
+        - "&7Clique com o botão direito para"
+        - "&7Spawnar o boss"
+        - "&75 minutos p/ matar"
+    Boss:
+      Name: "&4&lWither Boss" # Nome do boss
+      Health: 80 # Vida do boss
+      BossType: "Wither Boss" # Tipo de Boss
+      Tempo: 480 # Tempo para matar o boss em segundos, -1 para ser infinito
+      ArmorType: "Diamond" # Armadura
+      ArmorEnchantments: # Encantamento da armadura
+        - "PROTECTION_ENVIRONMENTAL:5"
+        - "PROTECTION_FIRE:5"
+        - "PROTECTION_FALL:5"
+        - "PROTECTION_EXPLOSIONS:5"
+      WeaponType: "276" # Item na mão do boss
+      WeaponEnchantments: # Encantamentos do item que estiver na mão do boss
+        - "DAMAGE_ALL:5"
+        - "FIRE_ASPECT:2"
+      NaturalDrops: false # Drops normais do boss, se true pode ocasionar dupe
+      DropXP: 300 # Quantidade de xp que irá dropar ao matar o boss, inteiro
+      CustomDrops: # Custom drops
+        - ""
+      MessageToKiller: # Variáveis disponíveís {player}, {boss}
+        - "&c&lVocê matou o Boss {boss}."
+      Commands:
+        - "me &a{player} matou um boss!!"
+      Servos:
+        Name: "&fServo de &3{boss}"
+        Health: 20
+        Delay: 3 # em segundos
+        ServosPorDelay: 5
+        MaxServos: 10
+        ArmorType: "Diamond"
+        ArmorEnchantments:
+          - "PROTECTION_ENVIRONMENTAL:1"
+        WeaponType: "268"
+        WeaponEnchantments:
+          - "DAMAGE_ALL:1"
+        Types:
+          - "Skeleton"
+          - "Enderman"
+  Enderman:
+    GUI:
+      ItemID: '383:54'
+      Slot: 4
+      Name: '&6&lEnderman Boss'
+      Lore:
+        - '&aO Boss Enderman'
+        - '&6* &75 minutos p/ matar'
+    SpawnEgg:
+      ItemID: '383:52'
+      Name: '&5&lEnderman Boss Egg'
+      Lore:
+        - '&7Clique com o botão direito para'
+        - '&7Spawnar o boss'
+        - '&75 minutos p/ matar'
+    Boss:
+      Name: '&4&lEnderman Boss'
+      Health: 80
+      BossType: 'Enderman'
+      Tempo: 480
+      ArmorType: 'Diamond'
+      ArmorEnchantments:
+        - PROTECTION_ENVIRONMENTAL:5
+        - PROTECTION_FIRE:5
+        - PROTECTION_FALL:5
+        - PROTECTION_EXPLOSIONS:5
+      WeaponType: '276'
+      WeaponEnchantments:
+        - DAMAGE_ALL:5
+        - FIRE_ASPECT:2
+      NaturalDrops: false
+      DropXP: 300
+      CustomDrops:
+        - ''
+      MessageToKiller:
+        - '&c&lVocê matou o Boss {boss}.'
+      Commands:
+        - me &a{player} matou um boss!!
+      Servos:
+        Name: '&fServo de &3{boss}'
+        Health: 20
+        Delay: 3
+        ServosPorDelay: 5
+        MaxServos: 10
+        ArmorType: Diamond
+        ArmorEnchantments:
+          - PROTECTION_ENVIRONMENTAL:1
+        WeaponType: '268'
+        WeaponEnchantments:
+          - DAMAGE_ALL:1
+        Types:
+          - Skeleton
+          - Enderman
+
+BossesVivos: "[]"
+#------------------
+# Todos encantamentos
+# PROTECTION_ENVIRONMENTAL
+# PROTECTION_FIRE
+# PROTECTION_FALL
+# PROTECTION_EXPLOSIONS
+# ROTECTION_PROJECTILE
+# OXYGEN
+# WATER_WORKER
+# DAMAGE_ALL
+# DAMAGE_UNDEAD
+# DAMAGE_ARTHROPODS
+# KNOCKBACK
+# FIRE_ASPECT
+# LOOT_BONUS_MOBS
+# DIG_SPEED
+# SILK_TOUCH
+# DURABILITY
+# LOOT_BONUS_BLOCKS
+# ARROW_DAMAGE
+# ARROW_KNOCKBACK
+# ARROW_FIRE
+# ARROW_INFINITE
+
+#------------------
+# Bosses disponíveis
+# Skeleton
+# Zombie
+# Slime
+# Witch
+# Iron Golem
+# Spider
+# EnderMan
+# Blaze
+# Silver Fish
+# Wither Skeleton
+# Wither Boss
+# Ender Dragon

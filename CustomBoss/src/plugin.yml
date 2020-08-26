@@ -1,0 +1,8 @@
+name: CustomBoss
+description: Plugin de bosses customizados
+version: 1.0
+main: me.marlon.customboss.CustomBoss
+author: Marlon_366
+commands:
+  boss:
+    description: Comando de Custom Boss

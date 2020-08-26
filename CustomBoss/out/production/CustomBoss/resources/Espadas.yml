@@ -1,0 +1,79 @@
+Settings:
+  InventoryName: "&6&lEspadas"
+  # Nome e lore do livro na gui principal
+  BookName: "&eEspadas"
+  BookLore:
+    - "Clique para editar as espadas"
+  Slots: 9 # Slot do inventário deve ser um multiplo de 9
+  DanoPadrao: 5 # Dano padrão das espadas que não são do plugin
+
+Espadas:
+  BladeOfOlympus:
+    GUI:
+      ItemID: "276"
+      Slot: 0
+      Name: "&b&lBlade of Olympus"
+      Lore:
+        - "&9Espada do Olimpiano Zeus"
+    Espada:
+      ItemID: "276"
+      Name: "&b&lBlade of Olympus"
+      Dano: 10
+      Lore:
+        - "&8&l- &7Dano 10"
+        - "&6&l* &8&oExclusivo para matar boss"
+
+  Matadora:
+    GUI:
+      ItemID: "283"
+      Slot: 1
+      Name: "&b&lMatadora de Boss"
+      Lore:
+        - "&9Espada Matadora de Boss"
+    Espada:
+      ItemID: "283"
+      Name: "&b&lMatadora de Boss"
+      Dano: 20
+      Lore:
+        - "&8&l- &7Dano 20"
+        - "&6&l* &8&oExclusivo para matar boss"
+
+  Vingadora:
+    GUI:
+      ItemID: "268"
+      Slot: 2
+      Name: "&b&lMatadora de Boss"
+      Lore:
+        - "&9Espada de Madera"
+    Espada:
+      ItemID: "268"
+      Name: "&b&lEspadinha"
+      Dano: 100
+      Lore:
+        - "&8&l- &7Dano 100"
+        - "&6&l* &8&oExclusivo para matar boss"
+
+
+#------------------
+# Todos encantamentos
+# PROTECTION_ENVIRONMENTAL
+# PROTECTION_FIRE
+# PROTECTION_FALL
+# PROTECTION_EXPLOSIONS
+# ROTECTION_PROJECTILE
+# OXYGEN
+# WATER_WORKER
+# DAMAGE_ALL
+# DAMAGE_UNDEAD
+# DAMAGE_ARTHROPODS
+# KNOCKBACK
+# FIRE_ASPECT
+# LOOT_BONUS_MOBS
+# DIG_SPEED
+# SILK_TOUCH
+# DURABILITY
+# LOOT_BONUS_BLOCKS
+# ARROW_DAMAGE
+# ARROW_KNOCKBACK
+# ARROW_FIRE
+# ARROW_INFINITE

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CustomBoss">
+    <output-path>$PROJECT_DIR$/../../Server/plugins</output-path>
+    <root id="archive" name="CustomBoss.jar">
+      <element id="module-output" name="CustomBoss" />
+    </root>
+  </artifact>
+</component>
